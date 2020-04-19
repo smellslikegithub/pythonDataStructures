@@ -33,3 +33,13 @@ class TestIntegerToBinary(unittest.TestCase):
         # Then
         self.assertEqual(output, "0",
                          "The feature output should match with the result")
+    #@Test
+    def test_integer_to_binary_conversion_with_bad_param(self):
+        # Given
+        i = IntegerToBinary()
+        param = "This"
+        # When
+        output = i.convert_unsigned_integer_to_binary(param)
+        # Then
+        self.assertEqual(output, "Invalid Input",
+                         "The feature output should match with the result")

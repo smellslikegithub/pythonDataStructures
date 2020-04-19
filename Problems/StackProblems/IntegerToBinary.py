@@ -9,6 +9,8 @@ class IntegerToBinary:
     def convert_unsigned_integer_to_binary(self, value):
         if value is 0:
             return "0"
+        elif str(value).isnumeric() is False:
+            return "Invalid Input"
         else:
             while (value >= 1):
                 quo = value // 2
