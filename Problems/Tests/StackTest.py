@@ -3,6 +3,7 @@ from Problems.StackProblems.BalancedParanthesis import Solution
 
 
 class TestSolution(unittest.TestCase):
+
     # @Test
     def test_balanced_paranthesis_with_no_arguments(self):
         # Given
@@ -51,6 +52,11 @@ class TestSolution(unittest.TestCase):
         result = s.is_paranthesis_balanced(testList)
         # Then result should be false
         self.assertFalse(result, "The solution should return false")
+
+    def test_run_for_demo_code(self):
+        for x in range(0, 3):
+            print("We're on time %d" % (x))
+
 
 if __name__ == '__main__':
     unittest.main()
